@@ -1,16 +1,118 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BactCounter — Home</title>
-  <meta name="description" content="BactCounter app homepage">
-  <link rel="canonical" href="https://bactcounter.com/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BactCounter — Support & Policies</title>
+
+  <!-- Google Search Console verification -->
+  <meta name="google-site-verification" content="tqppPuGVKBmMSDuJfpa1l31qOYwPjhyPL4_Xjh2mBXE" />
+
+  <meta name="description" content="Support, privacy, and data policies for BactCounter — camera-based colony counter." />
+  <link rel="canonical" href="https://sjk-1.github.io/bactcounter-privacy/" />
+<style>
+  :root{
+    --brand:#0b57d0;   /* primary blue */
+    --ink:#111;        /* main text */
+    --muted:#444;      /* secondary text */
+    --bg:#f7f9ff;      /* page background */
+    --card:#f5faff;    /* card background */
+    --line:#cce0ff;    /* borders/dividers */
+  }
+
+  *{box-sizing:border-box}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+  }
+
+  /* Header: blue gradient */
+  header{
+    padding:28px 20px;
+    text-align:center;
+    background:linear-gradient(135deg, var(--brand), #3f7ae0);
+    color:#fff;
+  }
+
+  main{
+    max-width:880px;
+    margin:0 auto;
+    padding:24px;
+  }
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:22px;
+    margin:16px 0;
+  }
+
+  h1{
+    margin:0 0 6px;
+    font-size:28px;
+    color:var(--brand);
+  }
+
+  h2{ margin:18px 0 6px }
+
+  p, li{ line-height:1.6; }
+
+  a{
+    color:var(--brand);
+    text-decoration:none;
+  }
+  a:hover{ text-decoration:underline; }
+
+  footer{
+    padding:26px 20px;
+    text-align:center;
+    color:var(--muted);
+    background:#f0f4ff;
+  }
+</style>
+
 </head>
 <body>
-<h1>BactCounter</h1>
-<p>Simple counter app with Google Sign-In (Firebase Auth).</p>
-<p><a href="/privacy">Privacy Policy</a></p>
-<p>Contact: <a href="mailto:support@bactcounter.com">support@bactcounter.com</a></p>
+  <header>
+    <h1>BactCounter</h1>
+    <p>Laboratory colony counter — fast, accurate, camera-based analysis.</p>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Contact & Support</h2>
+      <p>Email: <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a></p>
+      <a class="cta" href="mailto:salmajaoua@gmail.com">Email Support</a>
+    </section>
+
+    <section class="card">
+      <h2>Policies</h2>
+      <ul>
+        <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="./delete-account.html">Delete Account / Data Request</a></li>
+        <li><a href="./terms-of-service.html">Terms of Service</a></li>
+      </ul>
+      <p>We collect only what’s needed to function (e.g., login email; photos you choose to analyze). Data in transit is encrypted. You may request deletion at any time.</p>
+    </section>
+
+    <section class="card">
+      <h2>About the App</h2>
+      <ul>
+        <li>Category: Tools / Productivity</li>
+        <li>Core features: camera-based colony counting, image analysis</li>
+        <li>Sign-in required for saving results and syncing</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Transparency</h2>
+      <p>Authentication and storage may use trusted services (e.g., Firebase, Supabase). We don’t sell your data.</p>
+    </section>
+  </main>
+
+  <footer>© 2025 BactCounter</footer>
 </body>
 </html>
