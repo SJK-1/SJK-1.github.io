@@ -3,89 +3,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Terms of Service — BactCounter</title>
+  <title>BactCounter — Terms of Service</title>
 
-  <!-- icons -->
+  <!-- icons (same across the site) -->
   <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
-  
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0b57d0">
+
+  <!-- SEO -->
   <meta name="description" content="Terms governing your use of BactCounter." />
   <link rel="canonical" href="https://bactcounter.com/terms-of-service.html" />
+
+  <!-- Theme / layout (consistent with other pages) -->
   <style>
-  :root{
-    --brand:#0b57d0;   /* primary blue */
-    --ink:#111;        /* main text */
-    --muted:#444;      /* secondary text */
-    --bg:#f7f9ff;      /* page background */
-    --card:#f5faff;    /* card background */
-    --line:#cce0ff;    /* borders/dividers */
-  }
+    :root{
+      --brand:#0b57d0; --ink:#111; --muted:#444; --bg:#f7f9ff; --card:#fff; --line:#e1e8ff; --white:#fff;
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
 
-  *{box-sizing:border-box}
-  body{
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-  }
+    /* nav */
+    nav{background:var(--white);border-bottom:1px solid var(--line)}
+    .navwrap{max-width:980px;margin:0 auto;padding:10px 16px;display:flex;gap:16px;align-items:center}
+    .navwrap .spacer{margin-left:auto}
+    .badge{display:inline-block;padding:2px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px}
 
-  /* Header: blue gradient */
-  header{
-    padding:28px 20px;
-    text-align:center;
-    background:linear-gradient(135deg, var(--brand), #3f7ae0);
-    color:#fff;
-  }
+    /* hero */
+    header{background:linear-gradient(135deg,var(--brand),#3f7ae0);color:#fff;padding:28px 20px;text-align:center}
+    header h1{margin:0 0 6px;font-size:28px;color:#fff}
+    header p{margin:8px auto 0;max-width:860px;line-height:1.6}
 
-  main{
-    max-width:880px;
-    margin:0 auto;
-    padding:24px;
-  }
+    /* content */
+    main{max-width:980px;margin:0 auto;padding:24px 16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:16px 0}
+    h2{margin:6px 0 10px;color:var(--brand)}
+    p,li{line-height:1.6}
 
-  .card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:14px;
-    padding:22px;
-    margin:16px 0;
-  }
-
-  h1{
-    margin:0 0 6px;
-    font-size:28px;
-    color:var(--brand);
-  }
-
-  h2{ margin:18px 0 6px }
-
-  p, li{ line-height:1.6; }
-
-  a{
-    color:var(--brand);
-    text-decoration:none;
-  }
-  a:hover{ text-decoration:underline; }
-
-  footer{
-    padding:26px 20px;
-    text-align:center;
-    color:var(--muted);
-    background:#f0f4ff;
-  }
-</style>
-
+    /* footer */
+    footer{padding:26px 20px;text-align:center;color:var(--muted);background:#f0f4ff;margin-top:16px}
+  </style>
 </head>
 <body>
+  <!-- NAV -->
+  <nav>
+    <div class="navwrap">
+      <strong style="color:var(--brand)">BactCounter</strong>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms-of-service.html">Terms</a>
+      <a href="/delete-account.html">Delete Account</a>
+      <span class="spacer"><span class="badge">Support</span> <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
   <header>
-    <h1>BactCounter</h1>
-    <p>Terms of Service</p>
+    <h1>Terms of Service</h1>
+    <p>The terms that govern your use of BactCounter.</p>
   </header>
 
+  <!-- CONTENT -->
   <main>
     <article class="card">
-      <p><strong>Last updated:</strong> October 13, 2025</p>
+      <p><strong>Last updated:</strong> 15 Oct 2025</p>
 
       <h2>Use of the App</h2>
       <p>BactCounter provides camera-based colony counting tools. You are responsible for complying with applicable lab, privacy, and data policies.</p>
@@ -94,13 +79,13 @@
       <p>You must provide accurate information. You are responsible for safeguarding your credentials and for activity under your account.</p>
 
       <h2>Acceptable Use</h2>
-      <p>Don’t misuse the service (e.g., reverse engineering, disrupting operation, unauthorized access). Don’t upload unlawful content.</p>
+      <p>Do not misuse the service (e.g., reverse engineering, disrupting operation, unauthorized access), and do not upload unlawful content.</p>
 
       <h2>Ownership</h2>
       <p>BactCounter and its content are protected by intellectual property laws. You retain rights to the content you submit.</p>
 
       <h2>Disclaimers</h2>
-      <p>The app is provided “as is” without warranties. We don’t guarantee accuracy for diagnostic or clinical decisions; use professional judgment.</p>
+      <p>The app is provided “as is” without warranties. We do not guarantee accuracy for diagnostic or clinical decisions; use professional judgment.</p>
 
       <h2>Limitation of Liability</h2>
       <p>To the extent permitted by law, BactCounter will not be liable for indirect, incidental, or consequential damages.</p>
@@ -109,12 +94,19 @@
       <p>We may update these terms. Continued use after changes indicates acceptance.</p>
 
       <h2>Contact</h2>
-      <p>Questions: <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a></p>
+      <p>Questions? <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a></p>
 
-      <p><a href="./index.html">← Back to Home</a></p>
+      <p><a href="/index.html">← Back to Home</a></p>
     </article>
   </main>
 
-  <footer>© 2025 BactCounter</footer>
+  <!-- FOOTER -->
+  <footer>
+    © 2025 BactCounter ·
+    <a href="/index.html">Back to Home</a> ·
+    <a href="/privacy.html">Privacy Policy</a> ·
+    <a href="/terms-of-service.html">Terms</a> ·
+    <a href="/delete-account.html">Delete Account</a>
+  </footer>
 </body>
 </html>
