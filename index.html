@@ -25,53 +25,68 @@
       --bg:#f7f9ff;      /* page background */
       --card:#f5faff;    /* card background */
       --line:#cce0ff;    /* borders/dividers */
+      --white:#fff;
     }
     *{box-sizing:border-box}
     body{
       font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
       margin:0; background:var(--bg); color:var(--ink);
-      <nav style="background:#fff;border-bottom:1px solid #cce0ff">
-  <div style="max-width:880px;margin:0 auto;padding:10px 16px;display:flex;gap:16px;align-items:center">
-    <strong style="color:#0b57d0">BactCounter</strong>
-    <a href="/privacy.html" style="color:#0b57d0;text-decoration:none">Privacy</a>
-    <a href="/terms-of-service.html" style="color:#0b57d0;text-decoration:none">Terms</a>
-    <a href="/delete-account.html" style="color:#0b57d0;text-decoration:none">Delete Account</a>
-    <span style="margin-left:auto;color:#444">Contact: <a href="mailto:support@bactcounter.com">support@bactcounter.com</a></span>
-  </div>
-</nav>
-
     }
+
+    /* Top nav */
+    nav{background:var(--white);border-bottom:1px solid var(--line)}
+    .navwrap{max-width:880px;margin:0 auto;padding:10px 16px;display:flex;gap:16px;align-items:center}
+    .navwrap a{color:var(--brand);text-decoration:none}
+    .navwrap a:hover{text-decoration:underline}
+    .navspacer{margin-left:auto;color:var(--muted);font-size:.95rem}
+
+    /* Header (hero) */
     header{
       padding:28px 20px; text-align:center;
       background:linear-gradient(135deg, var(--brand), #3f7ae0); color:#fff;
     }
+    h1{ margin:0 0 6px; font-size:28px; color:#fff; }
+    header p{margin:6px auto 0; max-width:820px; line-height:1.6}
+
     main{ max-width:880px; margin:0 auto; padding:24px; }
     .card{
       background:var(--card); border:1px solid var(--line);
       border-radius:14px; padding:22px; margin:16px 0;
     }
-    h1{ margin:0 0 6px; font-size:28px; color:#fff; }
     h2{ margin:18px 0 6px; color:var(--brand); }
     p, li{ line-height:1.6; }
     a{ color:var(--brand); text-decoration:none; }
     a:hover{ text-decoration:underline; }
     .list{ padding-left:18px; }
-    footer{ padding:26px 20px; text-align:center; color:var(--muted); background:#f0f4ff; }
     .cta{ display:inline-block; margin-top:8px; padding:10px 14px; border-radius:10px; background:var(--brand); color:#fff; }
     .cta:hover{ filter:brightness(1.05); }
+
+    footer{ padding:26px 20px; text-align:center; color:var(--muted); background:#f0f4ff; }
   </style>
 </head>
 <body>
+
+  <!-- NAV (privacy visible without scrolling) -->
+  <nav>
+    <div class="navwrap">
+      <strong style="color:var(--brand)">BactCounter</strong>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms-of-service.html">Terms</a>
+      <a href="/delete-account.html">Delete Account</a>
+      <span class="navspacer">Contact: <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a></span>
+    </div>
+  </nav>
+
+  <!-- HERO / PURPOSE -->
   <header>
     <h1>BactCounter</h1>
-    <p>Camera-based colony counter — fast, accurate analysis and synced results.</p>
+    <p><strong>Purpose:</strong> BactCounter is a camera-based colony counter. Capture or upload plate images, automatically detect and count colonies, and manage multiple counters for lab experiments or inventories. Results are saved and synced across your devices.</p>
   </header>
 
   <main>
-    <!-- PURPOSE / WHAT THIS APP DOES -->
+    <!-- WHAT THIS APP DOES -->
     <section class="card" id="about">
       <h2>What BactCounter Does</h2>
-      <p><strong>Purpose:</strong> BactCounter helps you count bacterial colonies from images captured by your camera or uploaded from your device. Create multiple counters for labs, experiments, or inventories and review results over time.</p>
       <ul class="list">
         <li>Capture or upload plate images to detect and count colonies.</li>
         <li>Save, name, and manage multiple counters and sessions.</li>
@@ -80,17 +95,16 @@
     </section>
 
     <!-- HOW SIGN-IN IS USED -->
- <section class="card" id="signin">
-  <h2>How Google Sign-In Is Used</h2>
-  <p>BactCounter uses Google Sign-In (Google Identity / Firebase Auth) to authenticate you and sync your counters between devices.</p>
-  <ul class="list">
-    <li><strong>Data requested:</strong> basic profile (name), email address, and Google account ID (<code>openid</code>, <code>email</code>, <code>profile</code> scopes).</li>
-    <li><strong>How we use it:</strong> create your account, keep you signed in, save/restore your counters across devices.</li>
-    <li><strong>What we don’t do:</strong> we do not sell personal data.</li>
-  </ul>
-  <p>See our <a href="/privacy.html">Privacy Policy</a> for details and data-deletion options.</p>
-</section>
-
+    <section class="card" id="signin">
+      <h2>How Google Sign-In Is Used</h2>
+      <p>BactCounter uses Google Identity / Firebase Auth to authenticate you and sync your data.</p>
+      <ul class="list">
+        <li><strong>Data requested:</strong> basic profile (name), email address, and Google account ID (<code>openid</code>, <code>email</code>, <code>profile</code> scopes).</li>
+        <li><strong>How we use it:</strong> create your account, keep you signed in, save/restore your counters across devices.</li>
+        <li><strong>What we don’t do:</strong> we do not sell personal data.</li>
+      </ul>
+      <p>See our <a href="/privacy.html">Privacy Policy</a> for details and data-deletion options.</p>
+    </section>
 
     <!-- POLICIES / LEGAL -->
     <section class="card" id="policies">
@@ -112,8 +126,11 @@
   </main>
 
   <footer>
-  © 2025 BactCounter · <a href="/privacy.html">Privacy</a> · <a href="/terms-of-service.html">Terms</a> · <a href="/delete-account.html">Delete Account</a>
-</footer>
+    © 2025 BactCounter ·
+    <a href="/privacy.html">Privacy</a> ·
+    <a href="/terms-of-service.html">Terms</a> ·
+    <a href="/delete-account.html">Delete Account</a>
+  </footer>
 
 </body>
 </html>
