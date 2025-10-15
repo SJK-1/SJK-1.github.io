@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BactCounter — Support & Policies</title>
+  <title>BactCounter — Home</title>
+
   <!-- icons -->
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -12,108 +13,90 @@
   <!-- Google Search Console verification -->
   <meta name="google-site-verification" content="tqppPuGVKBmMSDuJfpa1l31qOYwPjhyPL4_Xjh2mBXE" />
 
-  <meta name="description" content="Support, privacy, and data policies for BactCounter — camera-based colony counter." />
-  <link rel="canonical" href="https://bactcounter.com/privacy" />
-<style>
-  :root{
-    --brand:#0b57d0;   /* primary blue */
-    --ink:#111;        /* main text */
-    --muted:#444;      /* secondary text */
-    --bg:#f7f9ff;      /* page background */
-    --card:#f5faff;    /* card background */
-    --line:#cce0ff;    /* borders/dividers */
-  }
+  <!-- SEO -->
+  <meta name="description" content="BactCounter is a camera-based colony counter. Create and manage counters, analyze images, and sync results securely with Google Sign-In." />
+  <link rel="canonical" href="https://bactcounter.com/" />
 
-  *{box-sizing:border-box}
-  body{
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-  }
-
-  /* Header: blue gradient */
-  header{
-    padding:28px 20px;
-    text-align:center;
-    background:linear-gradient(135deg, var(--brand), #3f7ae0);
-    color:#fff;
-  }
-
-  main{
-    max-width:880px;
-    margin:0 auto;
-    padding:24px;
-  }
-
-  .card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:14px;
-    padding:22px;
-    margin:16px 0;
-  }
-
-  h1{
-    margin:0 0 6px;
-    font-size:28px;
-    color:var(--brand);
-  }
-
-  h2{ margin:18px 0 6px }
-
-  p, li{ line-height:1.6; }
-
-  a{
-    color:var(--brand);
-    text-decoration:none;
-  }
-  a:hover{ text-decoration:underline; }
-
-  footer{
-    padding:26px 20px;
-    text-align:center;
-    color:var(--muted);
-    background:#f0f4ff;
-  }
-</style>
-
+  <style>
+    :root{
+      --brand:#0b57d0;   /* primary blue */
+      --ink:#111;        /* main text */
+      --muted:#444;      /* secondary text */
+      --bg:#f7f9ff;      /* page background */
+      --card:#f5faff;    /* card background */
+      --line:#cce0ff;    /* borders/dividers */
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      margin:0; background:var(--bg); color:var(--ink);
+    }
+    header{
+      padding:28px 20px; text-align:center;
+      background:linear-gradient(135deg, var(--brand), #3f7ae0); color:#fff;
+    }
+    main{ max-width:880px; margin:0 auto; padding:24px; }
+    .card{
+      background:var(--card); border:1px solid var(--line);
+      border-radius:14px; padding:22px; margin:16px 0;
+    }
+    h1{ margin:0 0 6px; font-size:28px; color:#fff; }
+    h2{ margin:18px 0 6px; color:var(--brand); }
+    p, li{ line-height:1.6; }
+    a{ color:var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .list{ padding-left:18px; }
+    footer{ padding:26px 20px; text-align:center; color:var(--muted); background:#f0f4ff; }
+    .cta{ display:inline-block; margin-top:8px; padding:10px 14px; border-radius:10px; background:var(--brand); color:#fff; }
+    .cta:hover{ filter:brightness(1.05); }
+  </style>
 </head>
 <body>
   <header>
     <h1>BactCounter</h1>
-    <p>Laboratory colony counter — fast, accurate, camera-based analysis.</p>
+    <p>Camera-based colony counter — fast, accurate analysis and synced results.</p>
   </header>
 
-  <main class="grid">
-    <section class="card">
+  <main>
+    <!-- PURPOSE / WHAT THIS APP DOES -->
+    <section class="card" id="about">
+      <h2>What BactCounter Does</h2>
+      <p><strong>Purpose:</strong> BactCounter helps you count bacterial colonies from images captured by your camera or uploaded from your device. Create multiple counters for labs, experiments, or inventories and review results over time.</p>
+      <ul class="list">
+        <li>Capture or upload plate images to detect and count colonies.</li>
+        <li>Save, name, and manage multiple counters and sessions.</li>
+        <li>Review, export, and continue analyses across devices.</li>
+      </ul>
+    </section>
+
+    <!-- HOW SIGN-IN IS USED -->
+    <section class="card" id="signin">
+      <h2>How Google Sign-In Is Used</h2>
+      <p>You sign in with your Google account to:</p>
+      <ul class="list">
+        <li><strong>Authenticate securely</strong> (we rely on Google Identity / Firebase Auth).</li>
+        <li><strong>Sync your counters and results</strong> so they’re available on any device you use.</li>
+        <li><strong>Restore your data</strong> if you reinstall or switch devices.</li>
+      </ul>
+      <p>We store your email (from Google Sign-In) and the counters/results you create. We do not sell personal data.</p>
+    </section>
+
+    <!-- POLICIES / LEGAL -->
+    <section class="card" id="policies">
+      <h2>Policies</h2>
+      <ul class="list">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/terms-of-service.html">Terms of Service</a></li>
+        <li><a href="/delete-account.html">Delete Account / Data Request</a></li>
+      </ul>
+      <p>Data is transmitted over HTTPS. Third-party processors (e.g., Google/Firebase) are used for authentication and storage under appropriate terms.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card" id="contact">
       <h2>Contact & Support</h2>
       <p>Email: <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a></p>
       <a class="cta" href="mailto:salmajaoua@gmail.com">Email Support</a>
-    </section>
-
-    <section class="card">
-      <h2>Policies</h2>
-      <ul>
-        <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="./delete-account.html">Delete Account / Data Request</a></li>
-        <li><a href="./terms-of-service.html">Terms of Service</a></li>
-      </ul>
-      <p>We collect only what’s needed to function (e.g., login email; photos you choose to analyze). Data in transit is encrypted. You may request deletion at any time.</p>
-    </section>
-
-    <section class="card">
-      <h2>About the App</h2>
-      <ul>
-        <li>Category: Tools / Productivity</li>
-        <li>Core features: camera-based colony counting, image analysis</li>
-        <li>Sign-in required for saving results and syncing</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Transparency</h2>
-      <p>Authentication and storage may use trusted services (e.g., Firebase, Supabase). We don’t sell your data.</p>
     </section>
   </main>
 
