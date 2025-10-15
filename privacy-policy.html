@@ -4,55 +4,135 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>BactCounter — Privacy Policy</title>
+
+  <!-- icons (same across the site) -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0b57d0">
+
+  <!-- SEO -->
   <meta name="description" content="Privacy Policy for BactCounter" />
   <link rel="canonical" href="https://bactcounter.com/privacy.html" />
-  <style>body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;max-width:860px;margin:32px auto;padding:0 16px;line-height:1.6;color:#111}</style>
+
+  <!-- Theme / layout (same as index) -->
+  <style>
+    :root{
+      --brand:#0b57d0; --ink:#111; --muted:#444; --bg:#f7f9ff; --card:#fff; --line:#e1e8ff; --white:#fff;
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    /* nav */
+    nav{background:var(--white);border-bottom:1px solid var(--line)}
+    .navwrap{max-width:980px;margin:0 auto;padding:10px 16px;display:flex;gap:16px;align-items:center}
+    .navwrap .spacer{margin-left:auto}
+    .badge{display:inline-block;padding:2px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px}
+    /* hero */
+    header{background:linear-gradient(135deg,var(--brand),#3f7ae0);color:#fff;padding:28px 20px;text-align:center}
+    header h1{margin:0 0 6px;font-size:28px;color:#fff}
+    header p{margin:8px auto 0;max-width:860px;line-height:1.6}
+    /* content */
+    main{max-width:980px;margin:0 auto;padding:24px 16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:16px 0}
+    h2{margin:6px 0 10px;color:var(--brand)}
+    ul{margin:0 0 8px 18px}
+    /* footer */
+    footer{padding:26px 20px;text-align:center;color:var(--muted);background:#f0f4ff;margin-top:16px}
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: 15 Oct 2025</p>
+  <!-- NAV -->
+  <nav>
+    <div class="navwrap">
+      <strong style="color:var(--brand)">BactCounter</strong>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms-of-service.html">Terms</a>
+      <a href="/delete-account.html">Delete Account</a>
+      <span class="spacer"><span class="badge">Support</span> <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a></span>
+    </div>
+  </nav>
 
-  <h2>Who we are</h2>
-  <p>BactCounter is a mobile application for counting bacterial colonies from Petri dish images. Contact: <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a>.</p>
+  <!-- HERO -->
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>How BactCounter collects, uses, and protects your information. Last updated: <strong>15 Oct 2025</strong>.</p>
+  </header>
 
-  <h2>Data we collect</h2>
-  <ul>
-    <li><strong>Google Sign-In data:</strong> basic profile, email, and identifiers (scopes: <code>openid</code>, <code>email</code>, <code>profile</code>) to authenticate you and maintain your account.</li>
-    <li><strong>User content:</strong> images you upload, counters, and session metadata you save in the app.</li>
-    <li><strong>Diagnostic data:</strong> basic, aggregate logs and crash reports to improve stability (where enabled by your device settings).</li>
-  </ul>
+  <!-- CONTENT -->
+  <main>
+    <section class="card">
+      <h2>Who we are</h2>
+      <p>BactCounter is a mobile application for counting bacterial colonies from Petri dish images. Contact: <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a>.</p>
+    </section>
 
-  <h2>How we use data</h2>
-  <ul>
-    <li>Authenticate you and keep your session active.</li>
-    <li>Sync and restore your counters across devices.</li>
-    <li>Operate, maintain, and improve the app (including troubleshooting).</li>
-  </ul>
+    <section class="card">
+      <h2>Data we collect</h2>
+      <ul>
+        <li><strong>Google Sign-In data</strong> (scopes: <code>openid</code>, <code>email</code>, <code>profile</code>) to authenticate you and maintain your account.</li>
+        <li><strong>User content</strong>: images you upload, counters, session metadata saved in the app.</li>
+        <li><strong>Diagnostics</strong>: aggregate logs/crash reports (where enabled by your device settings) to improve stability.</li>
+      </ul>
+    </section>
 
-  <h2>Sharing and processors</h2>
-  <p>We do not sell personal data. We use trusted processors to provide services:</p>
-  <ul>
-    <li><strong>Google/Firebase</strong> — authentication and cloud storage. See Google’s policies and terms.</li>
-  </ul>
+    <section class="card">
+      <h2>How we use data</h2>
+      <ul>
+        <li>Authenticate you and keep your session active.</li>
+        <li>Sync and restore your counters across devices.</li>
+        <li>Operate, maintain, and improve the app (including troubleshooting and safety).</li>
+      </ul>
+    </section>
 
-  <h2>Retention</h2>
-  <p>We retain your account data and saved counters while your account remains active. If you delete your account or request deletion, we delete associated personal data, subject to lawful retention requirements.</p>
+    <section class="card">
+      <h2>Sharing and processors</h2>
+      <p>We do <strong>not</strong> sell personal data. We use trusted processors to provide services:</p>
+      <ul>
+        <li><strong>Google/Firebase</strong> — authentication and cloud storage under their respective terms and policies.</li>
+      </ul>
+    </section>
 
-  <h2>Your choices</h2>
-  <ul>
-    <li>Export or delete content from within the app where available.</li>
-    <li>Request deletion or account closure via the <a href="/delete-account.html">Delete Account</a> page or by emailing <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a>.</li>
-  </ul>
+    <section class="card">
+      <h2>Retention</h2>
+      <p>We retain your account data and saved counters while your account is active. If you delete your account or request deletion, we delete associated personal data, subject to lawful retention requirements.</p>
+    </section>
 
-  <h2>Security</h2>
-  <p>Data is transmitted over HTTPS. We apply reasonable technical and organizational measures to protect personal data.</p>
+    <section class="card">
+      <h2>Your choices</h2>
+      <ul>
+        <li>Export or delete content in-app where available.</li>
+        <li>Request deletion or account closure via the <a href="/delete-account.html">Delete Account</a> page or by emailing <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a>.</li>
+      </ul>
+    </section>
 
-  <h2>Google API Services User Data Policy</h2>
-  <p>BactCounter’s use and transfer of information received from Google APIs to any other app adheres to the
-    <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
-    including the Limited Use requirements.</p>
+    <section class="card">
+      <h2>Security</h2>
+      <p>Data is transmitted over HTTPS. We apply reasonable technical and organizational safeguards to protect personal data.</p>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Questions? <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a></p>
+    <section class="card">
+      <h2>Google API Services User Data Policy</h2>
+      <p>BactCounter’s use and transfer of information received from Google APIs to any other app adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+        including the Limited Use requirements.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Questions? <a href="mailto:salmajaoua@gmail.com">salmajaoua@gmail.com</a></p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 BactCounter ·
+    <a href="/privacy.html">Privacy Policy</a> ·
+    <a href="/terms-of-service.html">Terms</a> ·
+    <a href="/delete-account.html">Delete Account</a>
+  </footer>
 </body>
 </html>
